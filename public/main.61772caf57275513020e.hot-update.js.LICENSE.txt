@@ -1,0 +1,11 @@
+/*! lodash/each */
+
+/*! pages/About */
+
+/*! pages/Detail */
+
+/*! pages/Home */
+
+/*!**********************!*\
+  !*** ./app/index.js ***!
+  \**********************/

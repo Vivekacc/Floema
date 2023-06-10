@@ -1,0 +1,125 @@
+.about__highlight{
+    margin: 20rem 0;
+
+    &:first-child{
+        margin-top: 0;
+    }
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
+.about__highlight__wrapper{
+
+    height: 104rem;
+    margin: auto;
+    position: relative;
+    width: 144rem;    
+
+    .about__highlight:nth-child(4) & {
+    
+        width: 104rem;
+    }
+
+    @include media('<=phone'){
+        // height: 52rem;
+        width: 100%;
+
+        .about__highlight:nth-child(4) & {
+            height: 119rem;
+            width: 100%;
+        }
+
+        .about__highlight:last-child & {
+            height: 316.2rem;
+        }
+    }
+
+}
+
+.about__highlight__label{
+
+    @extend %description-12;
+    
+    left: 50%;
+    letter-spacing: 0.1rem;
+    position: absolute;
+    top: 9rem;
+    width: 9.6rem;
+    transform: translateX(-50%);
+    text-align: center;
+    text-transform: uppercase;
+
+    @include media('<=phone'){
+        .about__highlight:last-child &{
+            font-size: 2.4rem;
+            width: 19rem;
+            top: 87rem;
+        }
+    }
+
+}
+
+.about__highlight__title{
+    @extend %title-200;
+    padding-bottom: 2rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    position: absolute;
+
+    @include media('<=phone'){
+        font-size: 30rem;
+    }
+}
+
+.about__highlight__media{
+
+    height: 70rem;
+    position: absolute;
+    width: 54rem;
+    
+
+    .about__highlight:nth-child(4) & {
+        height: 52.8rem;
+        width: 36rem;
+    }
+
+    &:first-child{
+        left: 0;
+        top: 0;
+    }
+
+    &:last-child{
+        right: 0;
+        bottom: 0;
+    }
+
+    @include media('<=phone'){
+    
+    .about__highlight:last-child &{
+        &:first-child{
+            left:50%;
+            transform: translateX(-50%);
+        }
+        
+        &:last-child {
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 10rem;
+        }
+        
+    }
+    }
+
+}
+
+.about__highlight__media__image{
+
+    @extend %cover;
+    
+    object-fit: cover;
+    
+}
+

@@ -1,0 +1,39 @@
+html{
+  font-size: calc(100vw / 1920 * 10 );
+  line-height: 1;
+
+
+  @include media('<=phone'){
+
+    font-size: calc(100vw / 750px * 10px );
+
+}
+
+}
+
+body {
+
+        @extend %description-16;
+
+        font-family: $font-suisse-bp;
+
+}
+
+a{
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+}
+
+button{
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: inherit;
+  z-index: 2;
+}
+
+img{
+  vertical-align: middle;
+}
