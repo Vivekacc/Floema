@@ -1,0 +1,8 @@
+
+******************************************************
+
+ const api = await initApi(req)
+  const about = await api.get({ predicates: [prismic.predicate.any('document.type',['about','meta'])]}).then(response => {
+  const { results } = response
+  const [about, meta] = results
+ 
